@@ -1,4 +1,4 @@
-# User Loyalty
+# User Loyalty [![Build Status](https://travis-ci.org/dunckr/user-loyalty.svg)](https://travis-ci.org/dunckr/user-loyalty)
 
 Test [Facebook's Doomsday](http://www.theverge.com/2016/1/4/10708356/facebook-is-preparing-for-android-doomsday) scenario against your users to determine their loyalty to your application.
 
