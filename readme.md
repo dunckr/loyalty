@@ -44,12 +44,6 @@ Returns whether testing scenario is currently in progress.
 npm install user-loyalty --save
 ```
 
-## Usage
-
-```js
-****
-```
-
 ## Dev
 
 ```sh
