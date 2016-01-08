@@ -1,24 +1,53 @@
-# Lib Starter [![Build Status](https://travis-ci.org/dunckr/lib-starter.svg)](https://travis-ci.org/dunckr/lib-starter)
+# User Loyalty
 
-Simple boilerplate for creating Libraries.
-
-Using:
-
-+ [Babel](https://github.com/babel/babel)
-+ [Webpack](https://github.com/webpack/webpack)
-+ [ESLint](https://github.com/eslint/eslint)
-+ [Karma](https://github.com/karma-runner/karma)
-+ [Mocha](https://github.com/mochajs/mocha)
-+ [Expect](https://github.com/mjackson/expect)
+Test [Facebook's Doomsday](http://www.theverge.com/2016/1/4/10708356/facebook-is-preparing-for-android-doomsday) scenario against your users to determine their loyalty to your application.
 
 ## Demo
 
-[http://dunckr.github.io/lib-starter/example/](http://dunckr.github.io/lib-starter/example/)
+[http://dunckr.github.io/user-loyalty/example/](http://dunckr.github.io/user-loyalty/example/)
+
+## Usage
+
+```js
+import UserLoyalty from 'user-loyalty'
+
+UserLoyalty.start()
+
+location.reload()
+
+UserLoyalty.stop()
+
+console.log(UserLoyalty.results())
+```
+
+## API
+
+### UserLoyalty.start()
+
+Prevents off XMLHttpRequests and begins logging the number of times the application is refreshed. Clears any statistics held about the user.
+
+### UserLoyalty.stop()
+
+Re-enables XMLHttpRequests.
+
+### UserLoyalty.statistics()
+
+Returns the number of times the application had been refreshed during the testing scenario.
+
+### UserLoyalty.active()
+
+Returns whether testing scenario is currently in progress.
 
 ## Installation
 
 ```sh
-npm install lib-starter
+npm install user-loyalty --save
+```
+
+## Usage
+
+```js
+****
 ```
 
 ## Dev

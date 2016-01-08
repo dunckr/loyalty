@@ -1,8 +1,8 @@
 {
-  "name": "loyalty",
+  "name": "user-loyalty",
   "version": "0.0.1",
-  "description": "***",
-  "main": "src/index.js",
+  "description": "Test Facebook's Doomsday scenario against your users to determine their loyalty to your application.",
+  "main": "src/userLoyalty.js",
   "scripts": {
     "start": "npm run clean && webpack-dev-server --hot",
     "test": "karma start --single-run",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:dunckr/lib-starter"
+    "url": "git@github.com:dunckr/user-loyalty"
   },
   "keywords": [],
   "author": "Duncan Beaton <dunckr@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dunckr/***/issues"
+    "url": "https://github.com/dunckr/user-loyalty/issues"
   },
-  "homepage": "https://github.com/dunckr/***",
+  "homepage": "https://github.com/dunckr/user-loyalty",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.4.0",
@@ -35,12 +35,12 @@
     "eslint-config-airbnb": "^3.0.2",
     "eslint-loader": "^1.2.0",
     "expect": "^1.13.4",
+    "jasmine-core": "^2.4.1",
     "karma": "^0.13.19",
     "karma-cli": "^0.1.2",
-    "karma-mocha": "^0.2.1",
+    "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.3",
     "karma-webpack": "^1.7.0",
-    "mocha": "^2.3.4",
     "phantomjs": "^1.9.19",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0"

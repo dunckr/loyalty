@@ -1,0 +1,63 @@
+body {
+  font: 100%/1.5 "Source Sans Pro", sans-serif;
+  color: #3d464d;
+  -webkit-font-smoothing max-width: 38rem;
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+main,
+section,
+footer {
+  padding: 20px 0;
+}
+
+section {}
+
+pre {
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F1;
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  max-height: 20px;
+}
+
+code {
+  text-shadow: 0 1px white;
+  font-family: 'Open Sans', Consolas, Monaco, 'Andale Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+}
+
+footer {
+  float: right;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+  0%, 100% {
+    transform: rotate(0)
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg)
+  }
+  40%,
+  80% {
+    transform: rotate(10deg)
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}

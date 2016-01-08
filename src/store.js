@@ -1,7 +1,15 @@
 export default class Store {
-  get() {}
-  clear() {}
-  increment() {}
 
-  _set() {}
+  constructor(backend = window.localStorage) {
+    this._backend = backend
+  }
+
+  get(key) {
+    return this._backend.getItem(key)
+  }
+
+  set(key, value) {
+    this._backend.setItem(key, value)
+  }
+
 }

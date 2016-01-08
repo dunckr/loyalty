@@ -1,10 +1,25 @@
-import expect from 'expect'
-import describedSpec from '../src'
+import describedSpec from '../src/store'
 
-describe('index', () => {
+describe('Store', () => {
+  let subject
 
-  it('should return a list of features', () => {
-    expect(describedSpec.test()).toBe(9)
+  beforeEach(() => {
+    window.localStorage.clear()
+    subject = new describedSpec()
+  })
+
+  describe('get', () => {
+    it('returns null if empty', () => {
+      expect(subject.get('counter')).toEqual(null)
+    })
+  })
+
+  describe('set', () => {
+    it('stores the value', () => {
+      let value = '10'
+      subject.set('counter', value)
+      expect(subject.get('counter')).toEqual(value)
+    })
   })
 
 })

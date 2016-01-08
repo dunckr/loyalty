@@ -9,7 +9,7 @@ const paths = {
 module.exports = (config) => {
   config.set({
 
-    frameworks: ['mocha'],
+    frameworks: ['jasmine'],
 
     preprocessors: {
       'test/**/*': ['webpack'],
