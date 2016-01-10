@@ -2,6 +2,8 @@
 
 Test [Facebook's Doomsday](http://www.theverge.com/2016/1/4/10708356/facebook-is-preparing-for-android-doomsday) scenario against your users to determine their loyalty to your application.
 
+It prevents users accessing your application by disabling XMLHttpRequests (AJAX). The test can be stopped and you can see how many times the user tried to access your application.
+
 ## Demo
 
 [http://dunckr.github.io/user-loyalty/example/](http://dunckr.github.io/user-loyalty/example/)

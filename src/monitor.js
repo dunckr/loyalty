@@ -12,8 +12,10 @@ export default class Monitor {
   }
 
   start() {
-    this._store.set(COUNTER, 0)
-    this._store.set(ACTIVE, true)
+    if (!this.active()) {
+      this._store.set(COUNTER, 0)
+      this._store.set(ACTIVE, true)
+    }
   }
 
   stop() {

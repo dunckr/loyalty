@@ -1,6 +1,6 @@
 {
   "name": "user-loyalty",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test Facebook's Doomsday scenario against your users to determine their loyalty to your application.",
   "main": "src/userLoyalty.js",
   "scripts": {
@@ -18,7 +18,10 @@
     "type": "git",
     "url": "git@github.com:dunckr/user-loyalty"
   },
-  "keywords": [],
+  "keywords": [
+    "loyalty",
+    "doomsday"
+  ],
   "author": "Duncan Beaton <dunckr@gmail.com>",
   "license": "MIT",
   "bugs": {
